@@ -1,0 +1,345 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/02/2018, 14:05:39
+    Author     : Allan
+*/
+
+/*Bot básico*/
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+a{text-decoration: none; color: #000;}
+img{width: 100%;}
+
+.content{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+/*BOX*/
+.box{display: inline-block; vertical-align: top;}
+.box1{width: 100%;}
+.box2{width: 48.9%; margin-right: 1%;}
+.box2:nth-of-type(2n+0){margin: 0;}
+.box3{width: 32%; margin-right: 2%;}
+.box3:nth-of-type(3n+0){margin-right: 0;}
+.box4{width: 23.5%;}
+.box4:nth-last-child{margin-right: 0;}
+.box30{width: 30%;}
+.box70{width: 69%;}
+
+/*MARGIN*/
+.m_top{margin-top: 20px;}
+.m_bottom{margin-bottom: 30px;}
+
+/*FLOAT*/
+.fl_left{float: left;}
+.fl_right{float: right;}
+.al_center{text-align: center; margin: 0 auto;}
+.clear{clear: both;}
+
+/*DISPLAY*/
+.ds_block{display: block;}
+
+/*BOX COLOR*/
+.box_pink{background-color: #f1e8e8;}
+.box_white{background-color: #fff;}
+.box_grey{background-color: #f9f9fb;}
+.box_greyDark{background-color: #ededed;}
+
+/*TITLE*/
+.main_title{font-size: 2em; text-transform: uppercase; font-style: oblique; color: #9864a9; margin-bottom: 50px;}
+.medium_title{font-size: 1.8em; font-style: oblique; color: #000; margin: 40px 0 60px;}
+.big_title{font-size: 3em; font-style: oblique; margin-bottom: 50px;}
+
+/*FONT COLOR*/
+.font_black{color: #000;}
+.font_white{color: #fff;}
+.font_purple{color: #9864a9;}
+.font_grey{color: #e8e8e8;}
+.font_greyLight{color: #999;}
+
+.btn{padding: 20px 0; text-align: center; text-transform: uppercase; border-radius: 5px; cursor: pointer; min-width: 100px;}
+.btn_purple{background-color: #9864a9; color: #fff;}
+.btn_purple:hover{background-color: #c280d8;}
+.btn_purpleLight{background-color: #f1e8e8; color: #9864a9; font-size: large;}
+.btn_purpleLight:hover{background-color: #e6b8b8;}
+
+/*FONT SIZE*/
+.font_zero{font-size: 0;}
+.font_medium{font-size: 1.7em;}
+.font_bold{font-weight: 900;}
+.font_uppercase{text-transform: uppercase; font-weight: 800;}
+
+/*STYLE PAGE*/
+.container{
+    padding: 0 3% 30px;
+}
+.main_menu{
+    padding: 80px 90px 50px;
+}
+.btn_menu{width: 50px; height: 50px; right: 0; position: absolute; display: none;}
+.main_logo{width: 13%;}
+.main_logo img{width: 100%;}
+.main_nav{margin-top: 17%;}
+.main_nav li{display: inline; margin-right: 30px;}
+.main_nav a{font-size: 1.5em; text-transform: uppercase;}
+.main_nav a:hover{border-bottom: solid 5px #9864a9;}
+.main_nav a:nth-last-of-type(1){font-size: 1.8em; text-transform: none;}
+.menu_donate{margin-top: 25px;}
+.menu_donate img{
+    width: 50%;
+}
+
+.language{
+    width: 50%;
+    margin-top: 12%;
+}
+.language span{
+    margin-right: 25px;
+    border: solid 2px #9864a9;
+    padding: 7px;
+    border-radius: 50%;
+    color: #9864a9;
+    font-weight: 800;
+    cursor: pointer;
+    float: left;
+}
+.language span:hover{
+    background-color: #9864a9;
+    color: #fff;
+}
+
+.language span:nth-child(3){margin-right: 0;}
+
+/*HEADER CONTENT*/
+.header_content{
+    background-image: url(../images/banner-1.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 540px;
+    padding: 100px 0;
+}
+
+.calltoaction_header{
+    width: 35%;
+    background-color: #fff;
+    padding: 70px 50px;
+    border-radius: 25px;
+
+}
+.calltoaction_header p{
+    margin-bottom: 80px;
+}
+.calltoaction_header span{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2em;
+    border-radius: 30px;
+}
+
+/*MEET PROJECTS*/
+.projects{
+
+    padding: 300px 0;
+}
+.thumb_projec{
+    border-radius: 25px 25px;
+}
+
+.view_all_projects{
+    display: block;
+    width: 20%;
+    margin-top: 100px;
+}
+
+.list_project{
+    display: none;
+    margin-top: 30px;
+}
+
+/*BLOG*/
+.blog{
+    padding: 200px 0;
+}
+.blog .content{
+    margin-bottom: 100px;
+}
+.blog h2{
+    margin-bottom: 100px;
+}
+.blog .btn_more{
+    margin-top: 100px;
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*DONATE HEADER*/
+.donate_footer{
+    background-image: url(../images/banner-2.jpg);
+    background-size: 100% 100%;
+
+
+    padding: 100px 0;
+    height: 500px;
+}
+.calltoaction_footer{
+    display: block;
+    padding: 20px 50px;
+    border-radius: 25px;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.content_footer{
+    padding: 50px 0 0;
+
+}
+.credits{
+    padding-top: 30px;
+    margin: 30px 0;
+
+    border-top: solid 1.5px #fff;
+}
+@media (max-width: 1600px){
+    .btn_menu{display: none;}
+    .main_menu {
+        padding: 80px 10px 50px;
+    }
+    .calltoaction_header{width: 55%;}
+
+
+    .language span{margin-right: 5px;}
+    .box2{width: 48%;}
+    
+}
+
+
+
+@media (max-width: 1200px){
+    /*MENU MOBILE*/
+    /*.container{background-color: blue;}*/
+    .main_nav{
+        width: 220px;
+        height: 500px;
+        position: absolute;
+        display: block;
+        left: 0;
+        margin: 0;
+        background-color: #9864a9;
+        border-radius: 0px 50px 50px 0;
+
+        -webkit-transform: translateX(-220px);
+        -moz-transform: translateX(-220px);
+        -ms-transform: translateX(-220px);
+        transform: translateX(-220px);
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -ms-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+    .active_menu{
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -ms-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+
+    .btn_menu{display: block; right: 30px; cursor: pointer;}
+
+    .content{width: 90%;}
+    .main_logo{width: 30%}
+
+    .language span{margin-right: 5px;}
+
+    .main_nav a{color: #fff; font-weight: 800; text-transform: uppercase;}
+    .main_nav li{margin-right: 0; padding: 20px; display: block; background-color: #9864a9;}
+    .main_nav li:nth-of-type(2n+0){background-color: #c280d8;}
+    .main_nav li:nth-child(1){border-radius: 0 50px;}
+    /*.main_nav li:first-child{border-radius: 10px 20px;}*/
+
+    .box70{width: 100%;}
+    .box30{width: 100%;}
+
+    .big_title{font-size: 2.5em; margin-bottom: 20px;}
+    .main_menu{padding: 80px 0px 49px;}
+
+    .header_content{background-repeat: no-repeat; background-attachment: initial;}
+    .calltoaction_header{width: 80%;}
+
+    .view_all_projects {width: 35%;}
+    .projects {padding: 200px 0 100px;}
+
+    .blog {padding: 100px 0;}
+    .blog .content {margin-bottom: 40px;}
+    .blog .btn_more{width: 25%;}
+
+    .donate_footer {padding: 40px 0;}
+
+    .calltoaction_footer {font-size: 1.5em;}
+}
+
+@media (min-width:501px) and (max-width: 750px){
+    .box3{width: 49%; margin-top: 30px;}
+    .box3:nth-of-type(2n+0){margin-right: 0;}
+
+
+    /*FONT SIZE*/
+    .medium_title{margin: 20px 0 25px;}
+
+    /*BTN*/
+    .btn{
+        width: 80%;
+        min-width: 220px;
+        margin: 10px auto !important;
+        display: block;
+    }
+
+    /*?PROJECTS*/
+    .projects{padding: 280px 0 100px;}
+
+    .big_title {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+    .blog .content {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .btn{width: 100%; margin: 20px auto;}
+    .language span{float: left; margin-right: 0px;}
+    /*.container{background-color: red;}*/
+    .box3{width: 100%; margin-top: 20px;}
+    /*TITLE*/
+    .main_title{font-size: 1.5em;}
+    .font_medium{font-size: 1.3em;}
+    .big_title{font-size: 1.7em;}
+    .calltoaction_header{width: 100%; padding-bottom: 5px;}
+
+    .projects {
+        padding: 300px 0 10px;
+    }
+    .projects h2{margin-top: 10px;}
+
+    .blog{padding: 100px 0;}
+    .blog .content{margin-bottom: 30px;}
+    .blog .btn_more{width: 90%;}
+
+}
